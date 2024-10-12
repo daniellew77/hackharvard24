@@ -1,0 +1,11 @@
+pip install -U langchain langchain-openai
+
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+LANGCHAIN_API_KEY="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"
+LANGCHAIN_PROJECT="pr-proper-dig-45"
+
+from langchain_openai import ChatOpenAI
+
+llm = ChatOpenAI()
+llm.invoke("Hello, world!")j
